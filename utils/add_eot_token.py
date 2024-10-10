@@ -1,4 +1,4 @@
-from utils.mmap_dataset import MMapIndexedDataset
+from mmap_dataset import MMapIndexedDataset
 import numpy as np
 from tqdm import tqdm
 import os
@@ -46,4 +46,4 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
 
-    add_eot_token(args.input_file, args.output_file)
+    add_eot_token(args.source_file, args.output_file)
